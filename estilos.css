@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+table, td,th{
+    border: 1px solid gray;
+}
+
+thead> tr > th{
+    padding: 1em;
+}
+
+thead > tr >th:first-child {
+     background-color: rgb(100, 100, 188);
+}
+
+thead> tr> th{
+    background-color: rgb(145, 145, 167);
+}
+
+table > tbody > tr :last-child> td{
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    font: size 1.5em;;
+}
+td:not(:first-child) {
+    text-align: center;
+}
+
+table > tbody > tr :last-child> td :first-child{
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
