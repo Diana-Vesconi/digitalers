@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+
+body>header {
+    background-color: black;
+    color: blanchedalmond;
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body>header>div img {
+    display: inline-block;
+}
+
+aside {
+
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    right: 10px;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 1em;
+}
