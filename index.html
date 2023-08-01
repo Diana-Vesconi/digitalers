@@ -1,91 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>Digitalers</title>
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-
+    
+    <title>Revisitando flex</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-    <header>
-        <div> <img src="Img/logo.jpg" width="200px">
-        </div>
-
-
+    <section>
         <div>
-            <h1>Digitalers</h1>
-            <h2>Portal de Noticias Digitalers</h2>
+            <h1>Direction: row</h1>
+            <div id="divFlex" class="flex-container flex-row wrap"></div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+          
         </div>
-        
-    </header>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-        </ul>
+    </section>
+    <select onchange="cambiarJustifyContent(this)">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="space-around">space-around</option>
+        <option value="space-between">space-between</option>
+        <option value="center">center></option>
+    </select>
+    <script>
+        function cambiarJustifyContent (cmb){
+            document.getElementById("divFlex").style.JustifyContent = cmb.value;
+        }
+    </script>
+    <div>
+        Align-items
+        <select onchange="cambiarAlignItems(this)">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">space-around</option>
+            <option value="stretch">stretch</option>
+        <script>
+            function cambiarAlignItems (cmb){
+                document.getElementById("divFlex").style.alignItems = cmb.value;
+            }
+        </script>
+    </div>
+    <section>
+        <div>
+            <h1>Direction: row (wrap)</h1>
+            <div class="flex-container flex-row wrap"></div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+          
+        </div>
+    </section>
 
-    </nav>
-    <main>
-        <section id="Noticias">
+    <section>
+        <div class="flex-container">
+            <h1>Direction: column</h1>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+        </div>
+    </section>
 
-            <article id="Noticia1">
-                <header>
-                    <h3>Un juego para aprender CSS</h3>
-                </header>
-                <p>CSS Sushi para aprender CSS pueden acceder al mismo
-                    <a href="https://flukeout.github.io/">Aquí</a>
-                </p>
-            </article>
-
-            <article id="Noticia2">
-                <header>
-                    <h3>Digitalers es la mejor propuesta de capacitación</h3>
-                </header>
-                <p>Qué estas esperando?</p>
-            </article>
-
-        </section>
-        <section id="Comentarios">
-
-            <article class="Noticias" id="Comentarios1">
-                <img src="Img/avatar1.jpg" width="50px">
-                <p>Muy buen curso</p>
-            </article>
-
-            <article class="Noticias" id="Comentarios2">
-                <img src="Img/avatar2.jpg" width="50px">
-                <p>Estoy aprendiendo muchas cosas</p>
-            </article>
-
-        </section>
-        <section id="Dejá tu comentario">
-            <form>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" required>
-
-                <label for="email">Email:(Opcional)</label>
-                <input type="email">
-
-                <label for="Comentario">Comentario:</label>
-                <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
-
-                <button>Enviar</button>
-
-            </form>
-        </section>
-
-    </main>
-    <aside>
-        <h4>Contratá fibrecorp</h4>
-        <p>La mejor banda ancha para tu hogar</p>
-    </aside>
-    <footer>
-        CopyRight 2023 &copy; .Digitalers
-    </footer>
 </body>
-
 </html>

@@ -1,40 +1,40 @@
-header{
-    text-align: center;
+.rojo {
+    background-color: rgb(255, 0, 0);
 }
 
-table{
-    width: 80%;
-    margin: auto;
+.verde {
+    background-color: #00ff00;
 }
 
-table, td,th{
-    border: 1px solid gray;
+.azul {
+    background-color: blue;
 }
 
-thead> tr > th{
-    padding: 1em;
+.caja{
+    height: 150px;
+    width: 150px;
 }
 
-thead > tr >th:first-child {
-     background-color: rgb(100, 100, 188);
+.flex-container{
+    display: flex;
 }
 
-thead> tr> th{
-    background-color: rgb(145, 145, 167);
+.flex-row{
+    flex-direction:row ;
 }
 
-table > tbody > tr :last-child> td{
-    padding: 1em;
-    text-align: center;
-    background-color: rgb(200, 200, 200);
-    font: size 1.5em;;
-}
-td:not(:first-child) {
-    text-align: center;
+.flex-col{
+    flex-direction: column;
 }
 
-table > tbody > tr :last-child> td :first-child{
-    text-align: center;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+.wrap{
+    flex-wrap: wrap;
+}
+
+justify-start{
+    justify-content: space-between;
+}
+
+justify-end{
+    justify-content: flex-end;
 }
