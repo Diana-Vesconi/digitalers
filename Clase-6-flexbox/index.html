@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Revisitando flex</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Direction: row</h1>
+            <div id="divFlex" class="flex-container flex-row wrap"></div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+          
+        </div>
+    </section>
+    <select onchange="cambiarJustifyContent(this)">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="space-around">space-around</option>
+        <option value="space-between">space-between</option>
+        <option value="center">center></option>
+    </select>
+    <script>
+        function cambiarJustifyContent (cmb){
+            document.getElementById("divFlex").style.JustifyContent = cmb.value;
+        }
+    </script>
+    <div>
+        Align-items
+        <select onchange="cambiarAlignItems(this)">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">space-around</option>
+            <option value="stretch">stretch</option>
+        <script>
+            function cambiarAlignItems (cmb){
+                document.getElementById("divFlex").style.alignItems = cmb.value;
+            }
+        </script>
+    </div>
+    <section>
+        <div>
+            <h1>Direction: row (wrap)</h1>
+            <div class="flex-container flex-row wrap"></div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+          
+        </div>
+    </section>
+
+    <section>
+        <div class="flex-container">
+            <h1>Direction: column</h1>
+            <div class="caja rojo">1</div>
+            <div class="caja verde">2</div>
+            <div class="caja azul">3</div>
+        </div>
+    </section>
+
+</body>
+</html>
