@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header>h1{
+    background-color:#f6d419;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3em;
+    text-shadow: 3px 3px 2px rgb(252, 251, 251);
+    
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#formWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#formWrapper>div{
+border: 1px solid gray;
+padding: 1em;
+margin-bottom: 2em;
+box-shadow: -17px 10px 63px -13px rgba(2,2,2,0.88);
+-webkit-box-shadow: -17px 10px 63px -13px rgba(2,2,2,0.88);
+-moz-box-shadow: -17px 10px 63px -13px rgba(2,2,2,0.88); ;
+border-radius: 43px 20px 43px 43px;
+-webkit-border-radius: 43px 20px 43px 43px;
+-moz-border-radius: 43px 20px 43px 43px;
+border: 2px solid #cfcbca;
+width: 50%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+input{
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+}
+
+button{
+    background-color:#f6d419;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #f66619;
+    box-shadow: 15px;
+}
