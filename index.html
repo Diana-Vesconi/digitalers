@@ -2,67 +2,53 @@
 <html lang="en">
 <head>
     
-    <title>Revisitando flex</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Grid Box</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section>
-        <div>
-            <h1>Direction: row</h1>
-            <div id="divFlex" class="flex-container flex-row wrap"></div>
-            <div class="caja rojo">1</div>
-            <div class="caja verde">2</div>
-            <div class="caja azul">3</div>
-          
-        </div>
-    </section>
-    <select onchange="cambiarJustifyContent(this)">
-        <option value="flex-start">flex-start</option>
-        <option value="flex-end">flex-end</option>
-        <option value="space-around">space-around</option>
-        <option value="space-between">space-between</option>
-        <option value="center">center></option>
-    </select>
-    <script>
-        function cambiarJustifyContent (cmb){
-            document.getElementById("divFlex").style.JustifyContent = cmb.value;
-        }
-    </script>
-    <div>
-        Align-items
-        <select onchange="cambiarAlignItems(this)">
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">space-around</option>
-            <option value="stretch">stretch</option>
-        <script>
-            function cambiarAlignItems (cmb){
-                document.getElementById("divFlex").style.alignItems = cmb.value;
-            }
-        </script>
-    </div>
-    <section>
-        <div>
-            <h1>Direction: row (wrap)</h1>
-            <div class="flex-container flex-row wrap"></div>
-            <div class="caja rojo">1</div>
-            <div class="caja verde">2</div>
-            <div class="caja azul">3</div>
-            <div class="caja rojo">1</div>
-            <div class="caja verde">2</div>
-            <div class="caja azul">3</div>
-          
-        </div>
-    </section>
+   <h1>Trabado</h1>
+   <div class="tablero-trabado">
+      <div id="A"></div>
+      <div id="B"></div>
+      <div id="C"></div>
+      <div id="D"></div>
+      <div id="E"></div>
+      <div id="F"></div>
+      <div id="G"></div>
+      <div id="H"></div>
+      <div id="I"></div>
+      <div id="K"></div>
+   </div>
+   <h1>Layout con areas</h1>
+   <div id="layout">
+        <header class="rojo">Header</header>
+        <nav class="verde">Menu</nav>
+        <main class="azul">main</main>
+        <footer class="amarillo">Footer</footer>
+        <aside>Publicidad</aside>
+   </div>
 
-    <section>
-        <div class="flex-container">
-            <h1>Direction: column</h1>
-            <div class="caja rojo">1</div>
-            <div class="caja verde">2</div>
-            <div class="caja azul">3</div>
-        </div>
-    </section>
+    <h1>Grilla Uniforme</h1>
+    <div class="grid-container">
+        <div class="rojo">1</div>
+        <div class="verde">2</div>
+        <div class="azul">3</div>
+        <div class="amarillo">4</div>
+        <div class="rojo">5</div>
+        <div class="verde">6</div>
+        <div class="azul">7</div>
+        <div class="amarillo">8</div>
+        <div class="rojo">9</div>
+    </div>
+    <h1>Grilla Deforme</h1>
+    <div class="grid-container">
+        <div id="caja-1" class="rojo">1</div>
+        <div id="caja-2" class="verde">3</div>
+        <div id="caja-3" class="verde">3</div>
+        <div class="amarillo">2</div>
+        <div class="azul">2</div>
+
+    </div>
 
 </body>
 </html>
